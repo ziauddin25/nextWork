@@ -6,9 +6,13 @@
     --primary: hsl(166 72% 45%);
 }
 
-*, body {
+*, *::after, *::before {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     box-sizing: border-box;
     font-family: Poppins, system-ui, sans-serif;
 }
