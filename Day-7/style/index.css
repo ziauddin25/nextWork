@@ -1,0 +1,373 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 600;
+    font-family: "Barlow Condensed", sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main {
+    padding-block: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 20px;
+}
+
+.title {
+    font-size: 32px;
+    color: #000;
+    margin-bottom: 6px;
+}
+
+.sub-title {
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 16px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.search-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+}
+
+.todo-search {
+    padding: 10px;
+    background: #f3f4f6;
+    border: 1px solid #d4d5d7;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: #f9a21f;
+}
+
+.search-btn {
+    background: #000;
+    border: none;
+    color: #fdf9f9;
+    padding: 12px 30px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.todo-search:focus {
+    outline: 1.6px solid#f9a21f;
+}
+
+.todo-btns {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.todo-btn {
+    background: none;
+    border: none;
+    color: #b1b1b1;
+    padding: 8px 12px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.active {
+    background: #0c0f16e6;
+    padding: 8px 12px;
+    border-radius: 6px;
+    color: #f3f4f6;
+}
+
+.todo-addBtn {
+    background: #0c0f16e6;
+    padding: 12px 16px;
+    border-radius: 6px;
+    color: #f3f4f6;
+    cursor: pointer;
+    border: none;
+}
+
+/* modal style */
+.add-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #d4d5d7;
+    border-radius: 16px;
+    padding: 16px;
+    width: 350px;
+    /* height: 300px; */
+    transform: translate(-50%, -50%);
+    border: none;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.add-modal::backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);   
+}
+
+.modal-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.modal-title {
+    font-size: 20px;
+    margin-bottom: 6px;
+    color: #000;
+    font-weight: normal;
+}
+
+#close-modal {
+    cursor: pointer;
+}  
+
+.modal-close:hover {
+    color: #0f0e0e;
+}
+
+
+.modal-input {
+    padding: 16px;
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #d4d5d7;
+    margin-bottom: 12px;
+    width: 100%;
+}
+
+.modal-input:focus {
+    outline: 1.6px solid #f9a21f;
+}
+
+.select-progress {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 16px 12px;
+    border-radius: 6px;
+    border: 1px solid #d4d5d7;
+    margin-bottom: 16px;
+}
+
+.select-progress:focus {
+    outline: 1.6px solid #f9a21f;
+}
+
+.task-btn {
+    padding: 16px;
+    border-radius: 8px;
+    background: #000;
+    color: #d4d5d7;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.task-btn:hover{
+    background: #1f1e1e;
+}
+/* dialog style end */
+
+.todo-container {
+    padding: 16px;
+    border-radius: 16px;
+    background: #f3f4f6;
+    min-height: 470px;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.todo-title {
+    font-size: 26px;
+    margin-bottom: 12px;
+    color: #000;
+}
+
+.clear-all {
+    background: rgb(154, 3, 3);
+    padding: 12px 20px;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 6px;
+}
+
+.allCards {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.todo-card {
+    padding: 12px;
+    border-radius: 8px;
+    background: #fff;
+    border: 1.5px solid #f3f4f6;
+    max-width: 300px;
+    min-width: 250px;
+}
+
+.card-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.card-title {
+    font-size: 20px;
+    color: #000;
+    overflow-wrap: break-word; 
+    word-break: break-word;
+}
+
+.complete-btn {
+    background: #d0defa;
+    color: #7089b8;
+    border: none;
+    border-radius: 20px;
+    font-size: 12px;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+}
+
+.card-subTitle {
+    font-size: 16px;
+    color: #565657;
+    overflow-wrap: break-word; 
+    word-break: break-word;
+    margin-bottom: 12px;
+}
+
+.card-progress {
+    padding: 8px 12px;
+    background: #f3bdc6;
+    color: #000;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.card-btns {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    align-items: center;
+}
+
+.btns {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.edit-btn {
+    padding: 8px 12px;
+    background: #dde7fa;
+    color: #0c0f16e6;
+    border: none;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.cancel-btn {
+    padding: 16px;
+    background: #ffffff;
+    color: #0c0f16e6;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 100%;
+}
+
+.delete-btn {
+    padding: 8px;
+    background: rgb(245, 182, 182);
+    color: rgb(239, 69, 69);
+    border: none;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.no-task {
+    font-size: 16px;
+    color: #000;
+}
+
+.modal-btns {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+
+/* final message */
+
+/* .message {
+    width: 400px;
+    padding: 16px;
+    border-radius: 12px;
+    background: #d0defa;
+    color: #000;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}; */
+
+
+#toast-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+.toast {
+  background-color: #88f7b6;
+  color: #000;
+  padding: 12px 24px;
+  border-radius: 8px;
+  margin-top: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-out;
+}
