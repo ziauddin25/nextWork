@@ -1,0 +1,80 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 600;
+    font-family: "Barlow Condensed", sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main {
+    padding-block: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 20px;
+}
+
+.all-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-radius: 12px;
+    padding: 16px;
+    gap: 16px;
+    background: #f3f4f6;
+}
+
+.card {
+    padding: 12px;
+    border-radius: 8px;
+    background: #ffffff;
+}
+
+.cd-title {
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 8px;
+}
+
+.cd-subTitle {
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 16px;
+}
+
+.cd-btn {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    background: #FF9D50;
+    color: #000;
+    cursor: pointer;
+    font-size: 18px;
+    display: inline-block;
+}
+
+.cd-btn:hover {
+    background: #ef9047;
+}
+
