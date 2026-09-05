@@ -59,7 +59,7 @@ inputField.addEventListener('keyup', function(e) {
 const parentDiv = document.getElementById('parent');
 parentDiv.addEventListener('click', (click) => {
     console.log('click parent', click);
-})
+});
 
 const childBtn = document.getElementById('btn-click');
 childBtn.addEventListener('click', (event) => {
