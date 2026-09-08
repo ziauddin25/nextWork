@@ -1,0 +1,119 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 600;
+    font-family: "Barlow Condensed", sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main {
+    position: relative;
+    height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin-inline: auto;
+    padding: 20px;
+}
+
+.loading-img {
+    height: 100%;
+    text-align: center;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#error-el {
+    color: red;
+    font-size: 16px;
+}
+
+#empty-el {
+    display: none;
+}
+
+
+
+.all-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-radius: 12px;
+    padding: 16px;
+    gap: 16px;
+    background: #f3f4f6;
+}
+
+.card {
+    padding: 12px;
+    border-radius: 8px;
+    background: #ffffff;
+}
+
+.cd-title {
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 8px;
+}
+
+.cd-subTitle {
+    font-size: 16px;
+    color: #2b2b2c;
+    margin-bottom: 16px;
+}
+
+.cd-address {
+    font-size: 16px;
+    color: #ef9047;
+    margin-bottom: 16px;
+}
+
+.cd-phone {
+    font-size: 16px;
+    color: #686969;
+    margin-bottom: 16px;
+}
+
+.cd-website {
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 16px;
+}
+
+
+.btn {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    background: #FF9D50;
+    color: #000;
+    cursor: pointer;
+    font-size: 18px;
+    display: none;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.btn:hover {
+    background: #ef9047;
+}
