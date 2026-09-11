@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/addToCart.css">
+    <link rel="stylesheet" href="../assets/fontawesome-free-7.3.1-web/css/all.min.css">
+</head>
+<body>
+    <main class="">
+        <section class="navbar">
+            <div class="container">
+                <div class="navbar-wrapper">
+                    <a href="./index.html" class="logo"><i class="fa-solid fa-cart-shopping"></i> ShopEase</a>
+                    <div class="search">
+                        <!-- <input type="text" placeholder="Search products....." class="search-input"> -->
+                        <div class="cart-icons">
+                            <a href="#" class=""><i class="fa-solid fa-heart"></i></a>
+                            <a href="./addToCart.html" class="cart-head">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span id="total-cart">0</span>
+                            </a>
+                            <a href="#" class=""><i class="fa-solid fa-user"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="addToCart">
+            <div class="container">
+                <div class="addToCart-wrapper">
+                    <h2 class="cart-title">All Cart</h2>
+                    <div class="addToCart-container">
+                        <div class="cart-cards" id="carts-cards">
+                            <p class="cart-text"></p>
+                        </div>
+                        <div class="total-cost">
+                            <div class="head">
+                                <p class="cost-title">Subtotal</p>
+                                <p class="cost-price cost-total">$0</p>
+                            </div>
+                            <div class="head">
+                                <p class="cost-title">Shipping</p>
+                                <p class="cost-price cost-shipping">$0</p>
+                            </div>
+                            <div class="head">
+                                <p class="cost-title">Total</p>
+                                <p class="cost-price total">$0</p>
+                            </div>
+                            <a href="#" class="checkout-btn">Checkout</a>
+                            <a href="./index.html" class="back-btn"><i class="fa-solid fa-arrow-left-long"></i> Continue Shopping</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script type="module" src="./addToCart.js"></script>
+</body>
+</html>
