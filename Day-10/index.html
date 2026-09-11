@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/fontawesome-free-7.3.1-web/css/all.min.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <main class="">
+        <section class="navbar">
+            <div class="container">
+                <div class="navbar-wrapper">
+                    <a href="#" class="logo"><i class="fa-solid fa-cart-shopping"></i> ShopEase</a>
+                    <nav class="">
+                        <ul class="nav-ul">
+                            <li><a href="#home" class="nav-link">Home</a></li>
+                            <li><a href="#home" class="nav-link">Categories</a></li>
+                            <li><a href="#home" class="nav-link">About</a></li>
+                        </ul>
+                    </nav>
+                    <div class="search">
+                        <input type="text" placeholder="Search products....." class="search-input" id="search-input">
+                        <div class="cart-icons">
+                            <a href="#" class=""><i class="fa-solid fa-heart"></i></a>
+                            <a href="./addToCart.html" class="cart-head">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span id="total-cart" class="total-cart">0</span>
+                            </a>
+                            <a href="#" class=""><i class="fa-solid fa-user"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- mobile -->
+                     <button class="mobile-navBtn" id="openNav"><i class="fa-solid fa-bars"></i></button>
+                     <button class="mobile-navBtn close" id="closeNav" ><i class="fa-solid fa-xmark"></i></button>
+                     <div class="mobile-nav" id="popup-content">
+                        <nav class="">
+                            <ul class="mobile-ul">
+                                <li><a href="#home" class="mobileNav-link"><i class="fa-solid fa-house"></i> Home</a></li>
+                                <li><a href="#home" class="mobileNav-link"><i class="fa-solid fa-layer-group"></i> Categories</a></li>
+                                <li><a href="#home" class="mobileNav-link"><i class="fa-solid fa-circle-info"></i> About</a></li>
+                            </ul>
+                        </nav>
+                        <div style="margin-bottom: 100px;">
+                            <div class="cart-mobileIcons">
+                                <a href="./addToCart.html" class="cart-head mobileNav-link">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <span id="total-cartMob" class="total-cart">0</span>
+                                    My cart
+                                </a>
+                                <a href="#" class="mobileNav-link"><i class="fa-solid fa-heart"></i> Wishlist</a>
+                                <a href="#" class="mobileNav-link"><i class="fa-solid fa-user"></i> My Account</a>
+                            </div>
+                        </div>
+                        <div class="mob-offer">
+                            <p class="mob-badge">special offer</p>
+                            <h4 class="mob-title">Get 20% off</h4>
+                            <p class="mob-subTitle">Use Code: save069</p>
+                            <a href="##" class="mob-btn"><i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                     </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="products-hero">
+            <div class="container">
+                <div class="hero-wrapper">
+                    <div class="sidebar">
+                        <h3 class="bar-title">Categories</h3>
+                        <ul class="">
+                            <li class="bar-ul active" data-category="all"><i class="fa-solid fa-plus"></i> All</li>
+                            <li class="bar-ul" data-category="Electronics"><i class="fa-brands fa-twitch"></i> Electronics</li>
+                            <li class="bar-ul" data-category="Clothing"><i class="fa-solid fa-pen-nib"></i> Clothing</li>
+                            <li class="bar-ul" data-category="Home & living"><i class="fa-solid fa-bookmark"></i> Home & living</li>
+                            <li class="bar-ul" data-category="Accessories"><i class="fa-solid fa-universal-access"></i> Accessories</li>
+                        </ul>
+                        <!-- <h3 class="bar-title">Price Range</h3>
+                        <input type="range" min="0" max="10000" class="bar-range" > -->
+                    </div>
+                    <div class="hero-container">
+                        <div class="hero-bg">
+                            <div class="hero-text">
+                                <span class="hero-badge">Best Deals</span>
+                                <h2 class="hero-title">Upgrade your lifestyle</h2>
+                                <p class="hero-subTitle">Premium products.Better life.</p>
+                                <a href="#" class="hero-btn">Shop now <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="products">
+                            <!-- mobile -->
+                            <div class="mobile-wrap">
+                                <input type="text" placeholder="Search products....." class="search-input mob-search" id="search-inputMob">
+                                <div style="position: relative;">
+                                    <button class="category-btn" id="category-btn">Category</button>
+                                    <div class="categories-dropdown" id="categories-dropdown">
+                                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+                                            <h3 class="bar-title">Categories</h3>
+                                            <button class="dropdown-close" id="dropdown-close" ><i class="fa-solid fa-xmark"></i></button>
+                                        </div>
+                                        <ul class="">
+                                            <li class="bar-ul active" data-category="all"><i class="fa-solid fa-plus"></i> All</li>
+                                            <li class="bar-ul" data-category="Electronics"><i class="fa-brands fa-twitch"></i> Electronics</li>
+                                            <li class="bar-ul" data-category="Clothing"><i class="fa-solid fa-pen-nib"></i> Clothing</li>
+                                            <li class="bar-ul" data-category="Home & living"><i class="fa-solid fa-bookmark"></i> Home & living</li>
+                                            <li class="bar-ul" data-category="Accessories"><i class="fa-solid fa-universal-access"></i> Accessories</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="products-title" id="main-title">Showing products</h3>
+                            <!-- api call styles -->
+                            <div class="data-call">
+                                <p id="error-el"></p>
+                                <div class="" id="loaded-el"><img src="./assets/img/loaded.svg" alt="loaded"></div>
+                                <p id="empty-el"></p>
+                            </div>
+                            <div class="products-cards" id="products-cards">
+                            
+                            </div>
+                            <p id="no-products"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script type="module" src="./index.js"></script>
+</body>
+</html>
