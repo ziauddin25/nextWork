@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     function showToast () {
-        const toastMain =document.getElementById('toast-container');
+        const toastMain = document.getElementById('toast-container');
         const toast = document.createElement('span');
         toast.classList.add('toast');
         toast.textContent = '🎉 Task Completed Successfully!';
@@ -98,6 +98,8 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 
     let editTaskId = null;
+    // console.log(editTaskId);
+    
     // const comTasks = localStorage.getItem('cmTasks');
     // const completedTask = localStorage?JSON.parse(comTasks) : [];
     // console.log('completed Tasks:', completedTask);

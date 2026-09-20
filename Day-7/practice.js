@@ -9,36 +9,6 @@ btn.addEventListener('click', (e)=> {
     e.stopPropagation();
 })
 
-    // <div class="">
-    //     <a href="#" id="btn">click me</a>
-    //     <input type="text" id="search-box" placeholder="search....">
-    //     <input type="text" id="name-input" placeholder="search....">
-    // </div>
-
-    // <div id="parent">
-    //     <div class="">
-    //         <button id="btn-click">Click me</button>
-    //     </div>
-    // </div>
-
-    // <div id="parent-container">
-    //     <h2 class="">welcome!</h2>
-    //     <button class="delete">Delete me</button>
-    //     <a href="#ll" class="open">Open new</a>
-    //     <a href="https://www.google.com" class="click-btn2">Open google</a>
-    // </div>
-
-    // <form action="" id="form">
-    //     <input type="text" class="" name="fullName">
-    //     <input type="number" class="" name="number">
-    //     <button class="" type="submit">Submit</button>
-    // </form>
-
-    // <h2 class="title-card">Card container</h2>
-    // <div class="" id="card-container">
-    // </div>
-
-
 const searchBox = document.getElementById('search-box');
 searchBox.addEventListener('input', (e)=> {
     console.log('current text:', e.target.value);

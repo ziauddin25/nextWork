@@ -540,7 +540,7 @@ document.addEventListener('DOMContentLoaded', function() {
         e.preventDefault();
 
         //currentTarget:
-        console.log(e.currentTarget);
+        // console.log('current target:', e.currentTarget);
         
         console.log('clicked parent');
         
