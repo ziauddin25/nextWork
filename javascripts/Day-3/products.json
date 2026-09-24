@@ -1,0 +1,23 @@
+[
+  {
+    "id": 101,
+    "title": "Wireless Mechanical Keyboard",
+    "category": "Electronics",
+    "price": 75.99,
+    "stock": 14
+  },
+  {
+    "id": 102,
+    "title": "Ergonomic Office Chair",
+    "category": "Furniture",
+    "price": 189.50,
+    "stock": 5
+  },
+  {
+    "id": 103,
+    "title": "Stainless Steel Water Bottle",
+    "category": "Home & Kitchen",
+    "price": 22.00,
+    "stock": 0
+  }
+]
