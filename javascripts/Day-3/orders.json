@@ -1,0 +1,18 @@
+[
+  {
+    "orderId": "ORD-5521",
+    "userId": 2,
+    "productId": 101,
+    "quantity": 1,
+    "status": "Delivered",
+    "orderDate": "2026-03-22"
+  },
+  {
+    "orderId": "ORD-5522",
+    "userId": 1,
+    "productId": 102,
+    "quantity": 2,
+    "status": "Pending",
+    "orderDate": "2026-03-24"
+  }
+]

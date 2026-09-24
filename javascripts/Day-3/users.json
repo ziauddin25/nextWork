@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Rahat Karim",
+    "email": "rahat@mail.com",
+    "role": "admin",
+    "isActive": true
+  },
+  {
+    "id": 2,
+    "name": "Nabila Islam",
+    "email": "nabila@mail.com",
+    "role": "customer",
+    "isActive": true
+  },
+  {
+    "id": 3,
+    "name": "Tanvir Ahmed",
+    "email": "tanvir@mail.com",
+    "role": "customer",
+    "isActive": false
+  }
+]
