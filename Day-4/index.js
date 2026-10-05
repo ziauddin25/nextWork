@@ -156,3 +156,160 @@ for (let i = 0; i < numS.length; i++) {
 }
 
 console.log(duplicate);
+
+//  practices: 
+
+let hi = 'hi, josef';
+const hello = 'welcome!';
+console.log(hi + ' ' + hello);
+
+const values = [1,2,3,4,5,6,7,8,9];
+for (let i = 0; i < values.length; i++) {
+    const sum = values[i] * 2;
+    console.log(sum);
+}
+
+const hasValues = true;
+if (hasValues === true) {
+    console.log('value is true!');
+} else {
+    console.log('value is false!');
+}
+
+
+const empty = null;
+if (empty === null) {
+    console.log('value is null!');
+} else {
+    console.log('value is empty!');
+}
+
+
+const ages = [101, 43, 12, 22, 32, 13, 9, 90, 89];
+for(let i = 0; i < ages.length; i++) {
+    let age = ages[i];
+    if (age % 2 === 0) {
+        console.log(age);
+    };
+};
+
+
+const nums = [22, 55, 44, 33, 22, 11, 89, 59];
+const evn = [];
+for(let i = 0; i <nums.length; i++) {
+    let x = nums[i];
+    if (x % 2 !==0) {
+     evn.push(x);
+    }
+};
+
+console.log(evn);
+
+const originalNums = [1, 44, 55, 33, 33, 44, 69, 1, 22, 60, 22];
+const seens = [];
+const duplicates = [];
+
+for (let i = 0; i < originalNums.length; i++) {
+    const m = originalNums[i];
+    if (seens.includes(m)) {
+        duplicates.push(m);
+    } else {
+        seens.push(m)
+    }
+};
+
+console.log(duplicates);
+
+function shippingCalculate (order) {
+    if (order >= 5000) {
+        console.log('Free!');
+    } else if (order >= 2000) {
+        console.log(60);
+    } else if (order >= 1000) {
+        console.log(70);
+    } else {
+        console.log(75);
+    }
+};
+
+shippingCalculate(999);
+
+
+// const selected = document.getElementById('selected');
+const inside = document.getElementById('inside');
+const outside = document.getElementById('outside');
+
+inside.addEventListener('click', ()=> {
+    console.log(70);
+});
+
+outside.addEventListener('click', ()=> {
+    console.log(120);
+});
+
+// function deliviry () {
+//     if (inside) {
+//         console.log(80);
+//     } else if (outside) {
+//         console.log(120);
+//     } else {
+//         console.log(80);
+//     }
+// };
+
+// deliviry();
+
+
+const users = {
+    id: '001',
+    name: 'josef nobel',
+    email: 'nobel001@gmail.com',
+    address: {
+        post_code: '0009',
+        city: 'east north town, mancester',
+        country: 'United of Kindom.'
+    },
+    phone: '+0998676869',
+    links: {
+        linkdIn: 'https://www.linkedin.com/',
+        github: 'https://github.com/ijosef008/git',
+        facebook: 'https://www.facebook.com/josef'
+    },
+    bio: null,
+};
+
+const {id, name, email,} = users; // destructring.
+console.log(id);
+console.log(name);
+
+const {...allData} = users; // rest.
+console.log(allData);
+
+console.log(allData.address.post_code.city?.lol); // optional chain.
+const bio = allData.bio?? 'no bio available!'; 
+console.log(bio);
+const update_role = 'update_role'; // computed.
+
+const newData = {
+    ...allData.address, // spreed.
+    [update_role]: 'frontend developer.',
+};
+
+console.log(newData);
+
+const profileData = {
+    id, name, email, bio, newData
+};
+
+console.log('profile data:', profileData);
+
+function usersData () {
+    console.log(profileData.id);
+    console.log(profileData.name);
+    console.log(profileData.email);
+    console.log(profileData.bio);
+    console.log(profileData.newData.city);
+    console.log(profileData.newData.update_role);
+};
+
+usersData();
