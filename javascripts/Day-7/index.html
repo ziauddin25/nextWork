@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#6366f1" />
+    <title>Product Dashboard</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="head">
+                <h2 class="head-title">Product Dashboard</h2>
+                <p class="head_subTitle">Explore our curated collection</p>
+            </div>
+        </div>
+    </header>
+    <section class="find_products">
+        <div class="container">
+            <div class="find_productsWrap">
+                <div class="search-products" data-icon="🔍">
+                    <input
+                        type="text"
+                        class="search-input"
+                        placeholder="Search products..."
+                        aria-label="Search products"
+                    />
+                </div>
+
+                <div class="filter-category" data-icon="📂">
+                    <select class="category-select" aria-label="Filter by category">
+                        <option value="all">All Categories</option>
+                        <option value="electronics">Electronics</option>
+                        <option value="jewelery">Jewelery</option>
+                        <option value="men's clothing">Men's Clothing</option>
+                        <option value="women's clothing">Women's Clothing</option>
+                    </select>
+                </div>
+
+                <div class="sort-products" data-icon="⇅">
+                    <select class="sort-select" aria-label="Sort products">
+                        <option value="default">Sort by</option>
+                        <option value="price-asc">Price: Low to High</option>
+                        <option value="price-desc">Price: High to Low</option>
+                        <option value="rating-desc">Rating: High to Low</option>
+                        <option value="name-asc">Name: A to Z</option>
+                    </select>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="product_status">
+        <div class="container">
+            <p class="status-text">20 products — showing 1-8</p>
+        </div>
+    </section>
+    <section class="product_list">
+        <div class="container">
+            <div class="product_grid">
+
+                <!-- Product Card 1 -->
+                <article class="product_card">
+                    <div class="product_image">
+                        <span class="product_imageIcon">🎒</span>
+                        <span class="product_badge">⭐ Top Rated</span>
+                    </div>
+                    <div class="product_body">
+                        <span class="product_category">Men's Clothing</span>
+                        <h3 class="product_title">
+                            Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops
+                        </h3>
+                        <div class="product_rating">
+                            <span class="rating_stars">★★★★☆</span>
+                            <span class="rating_value">3.9</span>
+                            <span class="rating_count">(120)</span>
+                        </div>
+                        <div class="product_footer">
+                            <span class="product_price">$109.95</span>
+                            <button class="product_btn" data-action="details">
+                                Details
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product Card 2 -->
+                <article class="product_card">
+                    <div class="product_image">
+                        <span class="product_imageIcon">👕</span>
+                    </div>
+                    <div class="product_body">
+                        <span class="product_category">Men's Clothing</span>
+                        <h3 class="product_title">
+                            Mens Casual Premium Slim Fit T-Shirts
+                        </h3>
+                        <div class="product_rating">
+                            <span class="rating_stars">★★★★☆</span>
+                            <span class="rating_value">4.1</span>
+                            <span class="rating_count">(259)</span>
+                        </div>
+                        <div class="product_footer">
+                            <span class="product_price">$22.30</span>
+                            <button class="product_btn" data-action="details">
+                                Details
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product Card 3 -->
+                <article class="product_card">
+                    <div class="product_image">
+                        <span class="product_imageIcon">🧥</span>
+                        <span class="product_badge">⭐ Top Rated</span>
+                    </div>
+                    <div class="product_body">
+                        <span class="product_category">Men's Clothing</span>
+                        <h3 class="product_title">
+                            Mens Cotton Jacket Winter Wear
+                        </h3>
+                        <div class="product_rating">
+                            <span class="rating_stars">★★★★★</span>
+                            <span class="rating_value">4.7</span>
+                            <span class="rating_count">(500)</span>
+                        </div>
+                        <div class="product_footer">
+                            <span class="product_price">$55.99</span>
+                            <button class="product_btn" data-action="details">
+                                Details
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product Card 4 -->
+                <article class="product_card">
+                    <div class="product_image">
+                        <span class="product_imageIcon">👖</span>
+                    </div>
+                    <div class="product_body">
+                        <span class="product_category">Men's Clothing</span>
+                        <h3 class="product_title">
+                            Mens Casual Slim Fit Denim Jeans
+                        </h3>
+                        <div class="product_rating">
+                            <span class="rating_stars">★★★☆☆</span>
+                            <span class="rating_value">2.1</span>
+                            <span class="rating_count">(430)</span>
+                        </div>
+                        <div class="product_footer">
+                            <span class="product_price">$15.99</span>
+                            <button class="product_btn" data-action="details">
+                                Details
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product Card 5 -->
+                <article class="product_card">
+                    <div class="product_image">
+                        <span class="product_imageIcon">💍</span>
+                        <span class="product_badge">⭐ Top Rated</span>
+                    </div>
+                    <div class="product_body">
+                        <span class="product_category">Jewelery</span>
+                        <h3 class="product_title">
+                            John Hardy Women's Legends Naga Gold Bracelet
+                        </h3>
+                        <div class="product_rating">
+                            <span class="rating_stars">★★★★★</span>
+                            <span class="rating_value">4.6</span>
+                            <span class="rating_count">(400)</span>
+                        </div>
+                        <div class="product_footer">
+                            <span class="product_price">$695.00</span>
+                            <button class="product_btn" data-action="details">
+                                Details
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product Card 6 -->
+                <article class="product_card">
+                    <div class="product_image">
+                        <span class="product_imageIcon">💎</span>
+                    </div>
+                    <div class="product_body">
+                        <span class="product_category">Jewelery</span>
+                        <h3 class="product_title">
+                            Solid Gold Petite Micropave Diamond Ring
+                        </h3>
+                        <div class="product_rating">
+                            <span class="rating_stars">★★★★☆</span>
+                            <span class="rating_value">3.9</span>
+                            <span class="rating_count">(70)</span>
+                        </div>
+                        <div class="product_footer">
+                            <span class="product_price">$168.00</span>
+                            <button class="product_btn" data-action="details">
+                                Details
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product Card 7 -->
+                <article class="product_card">
+                    <div class="product_image">
+                        <span class="product_imageIcon">⌚</span>
+                    </div>
+                    <div class="product_body">
+                        <span class="product_category">Electronics</span>
+                        <h3 class="product_title">
+                            White Gold Plated Princess Cut Solitaire Ring
+                        </h3>
+                        <div class="product_rating">
+                            <span class="rating_stars">★★★☆☆</span>
+                            <span class="rating_value">3.0</span>
+                            <span class="rating_count">(400)</span>
+                        </div>
+                        <div class="product_footer">
+                            <span class="product_price">$9.99</span>
+                            <button class="product_btn" data-action="details">
+                                Details
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product Card 8 -->
+                <article class="product_card">
+                    <div class="product_image">
+                        <span class="product_imageIcon">📱</span>
+                        <span class="product_badge">⭐ Top Rated</span>
+                    </div>
+                    <div class="product_body">
+                        <span class="product_category">Electronics</span>
+                        <h3 class="product_title">
+                            WD 4TB Gaming Drive Works with Playstation 4
+                        </h3>
+                        <div class="product_rating">
+                            <span class="rating_stars">★★★★★</span>
+                            <span class="rating_value">4.8</span>
+                            <span class="rating_count">(200)</span>
+                        </div>
+                        <div class="product_footer">
+                            <span class="product_price">$114.00</span>
+                            <button class="product_btn" data-action="details">
+                                Details
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+    <nav class="pagination">
+        <div class="container">
+            <div class="pagination_wrap">
+                <button class="page_btn page_btnPrev" disabled>◀</button>
+                <button class="page_btn page_btnActive">1</button>
+                <button class="page_btn">2</button>
+                <button class="page_btn">3</button>
+                <span class="page_dots">...</span>
+                <button class="page_btn">10</button>
+                <button class="page_btn page_btnNext">▶</button>
+            </div>
+        </div>
+    </nav>
+
+    <script src="./index.js"></script>
+</body>
+</html>
