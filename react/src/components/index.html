@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="count">count</button>
+    <script>
+        // math is a mathmetical term in js. here have some terms
+        /* math.round- round is always take nearest whole number. 4.5 = 5
+        math.floor- floor is rounds down. 4.7 = 4.
+        math.ceil - ceil is rounds up. 5.5 = 6.
+        math.max - always max number .
+        math.min - always min number.
+        */
+
+        let num = 8.5;
+        console.log(Math.round(num));
+        console.log(Math.floor(num)); 
+        console.log(Math.ceil(num));
+
+        let numCheck = [0,1,2,3,4,5,6,7,8,9,10];
+        console.log(Math.max(...numCheck));
+        console.log(Math.min(...numCheck));
+        
+        console.log('006' + 8);
+        console.log(88 + '77');
+        console.log(90 * '2');
+
+        let count = 0;
+        document.addEventListener('click', ()=> {
+            document.getElementById('count').innerHTML = `count ${count++}`;
+        })
+        
+        // random is random number execute.
+        let random = Math.floor(Math.random() * 10) + 1;
+        console.log(random);
+        
+
+        let numM = 15;
+        console.log(numM % 5);
+        console.log(7 **2);
+        console.log(Math.floor(5.6));
+
+        let randomNum = Math.floor(Math.random() * 100) +1;
+        console.log(randomNum);
+        let tp = 6;
+        console.log(typeof tp);
+        console.log(parseInt(1000.0009));
+        console.log(parseFloat(555));
+        let toFix = 22.90000001;
+        console.log(toFix.toFixed());
+        
+        // problem solving: 
+        
+        let n = 6;
+        let cube = n ** 3;
+        console.log(cube);
+        
+        let sq = 81;
+        console.log(Math.sqrt(sq));
+        
+        let pnum = 2;
+        console.log(Math.pow(2, 5));
+        
+
+        let price = 1200;
+        let finalPrice = price - (price * 15/100);
+        console.log(finalPrice);
+
+        let numS = 70 + 80 + 90 ;
+        let avarage = numS / 3;
+        console.log(avarage);
+                  
+        console.log(405 / 450 *100); // here math in parcentage in 450 tk ay 405 er . == 90%.
+        console.log(1000 * 7.5 /100);
+        
+        let ran = Math.floor(Math.random() * 6) + 1;
+        console.log(ran);
+        console.log(parseInt(Math.floor(Math.random() * 100) +1));
+        
+        let ranString = ["red", "blue", "green", "black"];
+        console.log(ranString[Math.floor(Math.random() * ranString.length)]);
+
+        let numIs = 17;
+        if (numIs % 2 == 0) {
+            console.log('num is even');
+        } else {
+            console.log('num is odd');
+            
+        } 
+
+        function createEventSystem() {
+            const event = {};
+
+            function on(eventName, callBack) {
+                // event = 
+                console.log(`${eventName} logged in!`);
+            }
+        }
+        
+    </script>
+</body>
+</html>
