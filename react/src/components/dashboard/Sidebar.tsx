@@ -1,4 +1,4 @@
-import useCounter from "../../lib/useCounter.ts";
+import useCounter from "../../hooks/useCounter.ts";
 
 export default function Sidebar() {
   const {count, increment} = useCounter();

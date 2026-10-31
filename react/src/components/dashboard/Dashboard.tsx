@@ -1,9 +1,9 @@
 import { useContext } from "react";
 import { useTheme } from "../../context/ThemeContext";
 import { UserContext } from "../../context/UserContext";
-import useCounter from "../../lib/useCounter.ts";
-import useToggle from "../../lib/useToggle.ts";
-import useFatch from "../../lib/useFetch.ts";
+import useCounter from "../../hooks/useCounter.ts";
+import useToggle from "../../hooks/useToggle.ts";
+import useFatch from "../../hooks/useFetch.ts";
 
 export default function Dashboard() {
   const { theme }:any = useTheme();
